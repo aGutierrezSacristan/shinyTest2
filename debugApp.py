@@ -52,7 +52,7 @@ if not st.session_state.logged_in:
         if st.form_submit_button("Login"):
             if user == "admin" and password == "1234":
                 st.session_state.logged_in = True
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("❌ Credenciales incorrectas")
 else:
