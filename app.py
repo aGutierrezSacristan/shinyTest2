@@ -5,7 +5,6 @@ import os
 # ---------- Setup ----------
 BASE_DIR = os.path.dirname(__file__)
 CSV_FILE = os.path.join(BASE_DIR, "cursos.csv")
-st.write("✅ CSV path in use:", CSV_FILE)
 
 # Create CSV if not found
 if not os.path.exists(CSV_FILE):
