@@ -28,8 +28,3 @@ elif tipo_filtro == "Por palabra clave":
     palabra_clave = st.text_input("Ingresa una palabra clave:")
     if palabra_clave:
         st.write(f"Buscando resultados relacionados con: _{palabra_clave}_")
-
-# Botón opcional para limpiar filtros
-if tipo_filtro:
-    if st.button("🔄 Limpiar Filtro"):
-        st.experimental_rerun()
